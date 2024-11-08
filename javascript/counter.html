@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+</head>
+<style>   
+    .container{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        color:crimson;
+    }
+    .count1{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:3rem;
+    }
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #reset{
+        
+        background-color: greenyellow;
+        color: darkgreen;
+        width: 5rem;
+        height: 3rem;
+        border-radius: 20px;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 60px;
+    }
+    .counter-app{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    }
+</style>
+<body>
+    <div class="counter-app" style=" background-color: bisque; height: 500px;width:500px;""> 
+    <div class="container">
+        <h1 id="headcount">Counter App</h1>
+    </div>
+    <div class="count1">
+        <button id="myplus"style="background-color: darkcyan; height: 2rem; width: 3rem;">+</button>
+        <h1 id="count2"style="font-size:4rem;">0</h1>
+        <button id="mysub" style="background-color:darkred;height: 2rem; width: 3rem;">-</button>
+    </div>
+    <div class="btn">
+        <button id="reset" >Reset</button>
+    </div>
+   </div>
+    <script src="counter.js"></script>
+</body>
+</html>
